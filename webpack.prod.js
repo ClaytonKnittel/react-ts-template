@@ -1,12 +1,12 @@
-const path = require("path");
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
+const path = require('path');
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  mode: "production",
+  mode: 'production',
   output: {
-    filename: "[id].bundle.js",
-    path: path.resolve(__dirname, "./dist/prod/static"),
+    filename: '[id].bundle.js',
+    path: path.resolve(__dirname, './dist/prod/static'),
     clean: true,
   },
   performance: {
@@ -15,7 +15,7 @@ module.exports = merge(common, {
   optimization: {
     innerGraph: true,
     splitChunks: {
-      chunks: "all",
+      chunks: 'all',
     },
   },
 });

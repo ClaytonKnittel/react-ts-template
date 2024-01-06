@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Helmet } from 'react-helmet';
 
-import 'client/styles/global_styles.css';
 import { App } from 'client/App';
+import 'client/styles/global_styles.css';
 
 const APP_TITLE = 'Onoro';
 const APP_DESCRIPTION = 'Onoro web client';
